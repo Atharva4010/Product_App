@@ -1,0 +1,32 @@
+Instructions to how to start project step by step.
+
+Step: 1
+Open XAMPP Control Panel and start:  
+   - Apache (for running PHP)  
+   - MySQL (for database) 
+
+Step: 2
+   - Open VS Code then click on file and then click on open folder
+   - Go to the htdocs folder in XAMPP (C:\xampp\htdocs).  
+   - Create a new folder called product_app.  
+   - Inside product_app, create the following files:  
+	form.php, insert.php .
+
+Step: 3
+   Create the HTML Form (form.php)  
+  - Open form.php and add the following form code  
+
+Step: 4
+   Create the MySQL Database
+   - Open phpMyAdmin (http://localhost/phpmyadmin/).
+   - Click Databases, create a new database named product_db.
+   - Open the SQL tab and write sql queryand  run the  query:
+
+Step: 5
+   - open vs code
+   - open insert.php file and add code
+
+Step: 6
+   - Open your browser and go to: http://localhost/product_app/form.php
+   - Fill in the form and click Submit.
+   - Check phpMyAdmin to confirm the data is stored.

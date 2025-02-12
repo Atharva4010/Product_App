@@ -35,7 +35,7 @@ CREATE TABLE `products` (
   `price` decimal(10,2) NOT NULL,
   `quantity` int(11) NOT NULL,
   `purchase_date` date NOT NULL,
-  `vendor` enum('hp','dell','apple') NOT NULL
+  `vendor` enum('hp','dell','apple','lenovo','acer') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -46,7 +46,7 @@ INSERT INTO `products` (`id`, `name`, `short_description`, `long_description`, `
 (1, 'legion 5', 'gaming laptop', 'best gaming laptop in this category ,efficient ryzen processer with integrated graphics card', 60000.00, 10, '2023-11-11', 'hp'),
 (2, 'Rog', 'gaming ', 'best in the category', 80000.00, 5, '2025-02-06', 'apple'),
 (3, 'think book', 'every day laptop', 'good daily day usage laptop', 47050.00, 1, '2025-01-17', 'hp'),
-(4, 'aspire', 'work laptop', 'gdsahdui sands,', 55066.00, 3, '2025-02-22', 'apple');
+(4, 'aspire', 'work laptop', 'gdsahdui sands,', 55066.00, 3, '2025-02-22', 'acer');
 
 --
 -- Indexes for dumped tables

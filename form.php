@@ -76,7 +76,8 @@
     </form>
 </div>
 
-<script>
+    
+<script> // using javascript for validating the form
 function validateForm() {
     let fields = document.querySelectorAll("input, textarea, select");
     let valid = true;

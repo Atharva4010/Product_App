@@ -1,18 +1,18 @@
 <?php
-$servername = "localhost";
-$username = "root";  // Default XAMPP username
-$password = "";      // Default XAMPP password
-$database = "product_db";
+$servername = "localhost"; // server name
+$username = "root";  // default XAMPP username
+$password = "";      // default XAMPP password
+$database = "product_db"; // database name
 
-// Create connection
+// creating a connection to  
 $conn = new mysqli($servername, $username, $password, $database);
 
-// Check connection
+// checking a  connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Get form data
+// getting the form data 
 $name = $_POST['name'];
 $short_description = $_POST['short_description'];
 $long_description = $_POST['long_description'];
@@ -21,7 +21,7 @@ $quantity = $_POST['quantity'];
 $purchase_date = $_POST['purchase_date'];
 $vendor = $_POST['vendor'];
 
-// Insert into database
+// inserting the data into database
 $sql = "INSERT INTO products (name, short_description, long_description, price, quantity, purchase_date, vendor) 
         VALUES ('$name', '$short_description', '$long_description', '$price', '$quantity', '$purchase_date', '$vendor')";
 
@@ -31,5 +31,5 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$conn->close();
+$conn->close(); // closing the connection
 ?>
